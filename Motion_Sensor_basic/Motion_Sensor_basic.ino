@@ -10,7 +10,7 @@ pinMode(motionPin, INPUT); //set motion sensor as input
 }
 
 void loop() {
-  motionStatePrevious = motionStaeCurrent; //store old state
+  motionStatePrevious = motionStateCurrent; //store old state
   motionStateCurrent = digitalRead(motionPin); //read new state
 
   if motionStatePrevious == LOW && motionStateCurrent == HIGH { //
